@@ -92,11 +92,13 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  font-family: 'Smooch Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
   display: flex;
+  font-family: Poppins, sans serif;
+  background-color:#000000;
   gap: 15px;
 }
 
@@ -180,6 +182,28 @@ nav a:hover {
   outline: none; /* Remove o foco padrão */
   position: relative;
   z-index: 1;
+  font-family: Redux, sans serif;
+}
+.btn-container2 {
+  background-color: #0015FF; /* Cor de fundo do botão */
+  color: #FFF; /* Cor do texto */
+  border: none; /* Remove bordas padrão */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Mostra o ícone de "mão" no hover */
+  transition: all 0.3s ease; /* Animações suaves */
+  
+}
+.btn-container {
+  text-align: center; /* Centraliza o botão */
+  margin: 20px; /* Espaçamento em volta do contêiner */
+}
+
+/* Efeito ao passar o mouse */
+.btn-container2:hover {
+  background-color: #0048FF; /* Muda o fundo no hover */
+  box-shadow: 0 4px 15px rgba(0, 21, 255, 0.5); /* Adiciona sombra */
 }
 
 .input-container input::placeholder {
@@ -214,6 +238,51 @@ nav a:hover {
 .input-container:hover:before,
 .input-container:hover:after {
   transform: skew(-20deg); /* Remove offset no hover */
+}
+
+/* Estilo do rodapé de créditos */
+.creditos {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  text-align: center; /* Centraliza tudo */
+  padding: 20px; /* Espaçamento interno */
+  font-family: 'Montserrat', sans-serif; /* Fonte do texto */
+  font-size: 14px; /* Tamanho do texto */
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+.creditos strong {
+  color: #FFD700; /* Destaque inicial em dourado */
+}
+
+.creditos .kk-dev {
+  color: #FFD700; /* kk_dev em dourado */
+}
+
+.creditos .neob {
+  color: #0015FF; /* NeoB em azul */
+}
+
+.creditos-icons {
+  margin-top: 10px; /* Espaçamento entre texto e ícones */
+}
+
+.creditos-icons .icon {
+  width: 60px; /* Tamanho dos ícones */
+  height: 60px;
+  margin: 0 10px; /* Espaçamento entre os ícones */
+  transition: transform 0.3s ease; /* Animação suave */
+  border-radius:50%;
+}
+
+.creditos-icons .icon:hover {
+  transform: scale(1.2); /* Aumenta o tamanho no hover
+  */
+  box-shadow:0 0 30px #00FF97C2;
+}
+a {
+  transform: scale(1.2); /* Aumenta o tamanho no hover */
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* FONT-FACE */
