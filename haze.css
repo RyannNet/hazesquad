@@ -1,312 +1,92 @@
-/* RESET BÁSICO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* ESTILOS GERAIS */
 body {
-  background: linear-gradient(90deg, #080011, #02002C);
-  color: #FFFFFF;
-  margin: 0;
-  background-image: url('/796 Sem Título_20250122125104.png');
-  background-repeat: no-repeat;
-  background-size: cover; /* Imagem cobre tudo sem deformar */
-  background-position: center;
-  background-attachment: fixed; /* Fundo fixo ao rolar */
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* TÍTULOS */
-h1 {
-  font-family: 'VAS', sans-serif;
-  color: #FFF100;
-  font-size: 50px;
-  text-shadow: 0 0 15px #000000;
-  margin-top: 50px;
-}
-h1 {
-  font-family: 'VAS', sans-serif;
-  color: #FFF100;
-  font-size: 50px;
-  text-shadow: 0 0 15px #000000;
-  margin-top: 50px;
-}
-.h1black{
-  font-family: 'VAS', sans-serif;
-  color: #000000;
-  font-size: 50px;
-  text-shadow: 0 0 0px #00FF67;
-  margin-top: 50px;
-  
-}
-
-/* PARÁGRAFOS */
-p {
-  color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  margin: 30px;
-  text-align: center;
-
-}
-
-/* BOTÃO */
-/* Contêiner para centralizar o botão */
-.btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Altura do contêiner */
-  margin-top: 50px; /* Ajuste o espaço conforme necessário */
+  height: 100vh;
+  text-align: left;
+  background-color: #ffffff;
+  color: #333;
 }
 
-/* Estilo do botão */
+.container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+img {
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
 button {
-  background-color: #FFD404;
-  color: #000;
-  border: 3px solid #EFA41D8F;
-  border-radius: 15px;
-  font-family: 'AB', sans-serif;
-  font-size: 15px;
-  height: 50px;
-  width: 250px;
-  text-align: center;
-  padding: 10px;
-  transition: all 0.5s;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #1a73e8;
+  border: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 button:hover {
-  background-color: #FFD30054;
-  border: 1px solid #FFBD00;
-  box-shadow: 0 0 20px #FFB100;
-  color: #FFFFFF;
-}
-/* HEADER */
-header {
-  background-color: #000000;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #135abe;
 }
 
-nav {
-  display: flex;
-  font-family: Poppins, sans serif;
-  background-color:#000000;
-  gap: 15px;
+/* Modo escuro se o sistema estiver no dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #ddd;
+  }
+
+  button {
+    background-color: #5394FF;
+  }
+
+  button:hover {
+    background-color: #3367d6;
+  }
+}
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #ddd;
 }
 
-nav a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s;
+.dark-mode button {
+  background-color: #4285f4;
 }
 
-nav a:hover {
-  color: #FF5733;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #FFFFFF;
-}
-
-/* APRESENTAÇÃO */
-.apresentacao {
-  background-color: #FFDB00;
-  color: #000000;
-  width: 100%;
-  height: auto; /* Não usar 100% fixo */
-  box-shadow: 0 4px 50px rgba(255, 215, 0, 1);
-  font-family: 'VAS', sans-serif;
-  text-align: center;
-  padding: 20px;
-  margin-top: 210px;
-}
-/* AB Aquire
-.apresentacao p {
-  font-family: 'AB', sans-serif;
-  font-size: 16px;
-  color: #000000;
-  
-}
-
-/* PLATAFORMAS */
-.plataformas {
-  text-align: center;
-  margin-top: 150px;
-}
-.container{
-  background: linear-gradient(195deg, #141972, #171717F7);
-  background-image: url('/798 Sem Título_20250122185147.png');
-  background-size:cover;
-  box-shadow: 0 0 15px, #262626;
-  border-radius:15px;
-  border:1px solid #4D4D4D;
-  height: 250px;
-  margin-top:10px;
-  width: 100%;
-}
-.container h4{
-  color:#FFBD00;
-  font-family: VAS, sans serif;
-  text-align: center;
-  margin-top:20px;
-}
-.container hr{
-  margin: 0 auto; /* Centraliza horizontalmente */
-  width: 110px; /* Ajusta a largura pra ficar menor */
-  border: 0.5px solid #FF7600; /* Muda a cor e o estilo */
-}
-.input-container {
-  position: relative;
-  display: inline-block;
-}
-
-.input-container input {
-  background: #1a1a1a; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-  border: none; /* Remove borda padrão */
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 0; /* Remove bordas arredondadas */
-  width: 300px; /* Largura */
-  outline: none; /* Remove o foco padrão */
-  position: relative;
-  z-index: 1;
-  font-family: Redux, sans serif;
-}
-.btn-container2 {
-  background-color: #0015FF; /* Cor de fundo do botão */
-  color: #FFF; /* Cor do texto */
-  border: none; /* Remove bordas padrão */
-  border-radius: 8px; /* Bordas arredondadas */
-  padding: 10px 20px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
-  cursor: pointer; /* Mostra o ícone de "mão" no hover */
-  transition: all 0.3s ease; /* Animações suaves */
-  
-}
-.btn-container {
-  text-align: center; /* Centraliza o botão */
-  margin: 20px; /* Espaçamento em volta do contêiner */
-}
-
-/* Efeito ao passar o mouse */
-.btn-container2:hover {
-  background-color: #0048FF; /* Muda o fundo no hover */
-  box-shadow: 0 4px 15px rgba(0, 21, 255, 0.5); /* Adiciona sombra */
-}
-
-.input-container input::placeholder {
-  color: #ccc; /* Cor do placeholder */
-  font-style: italic;
-}
-
-.input-container:before,
-.input-container:after {
-  content: '';
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #000000;
-  pointer-events: none;
-  transform: skew(-20deg); /* Faz as pontas inclinadas */
-  top: 0;
-  left: 0;
-  transition: 0.3s ease;
-}
-
-.input-container:before {
-  transform: skew(-20deg) translate(-5px, -5px); /* Offset pra fora */
-}
-
-.input-container:after {
-  transform: skew(-20deg) translate(5px, 5px); /* Offset pra dentro */
-  border-color: #FF5200; /* Cor secundária */
-}
-
-.input-container:hover:before,
-.input-container:hover:after {
-  transform: skew(-20deg); /* Remove offset no hover */
-}
-
-/* Estilo do rodapé de créditos */
-.creditos {
-  background-color: #000; /* Fundo preto */
-  color: #fff; /* Texto branco */
-  text-align: center; /* Centraliza tudo */
-  padding: 20px; /* Espaçamento interno */
-  font-family: 'Montserrat', sans-serif; /* Fonte do texto */
-  font-size: 14px; /* Tamanho do texto */
-  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
-}
-
-.creditos strong {
-  color: #FFD700; /* Destaque inicial em dourado */
-}
-
-.creditos .kk-dev {
-  color: #FFD700; /* kk_dev em dourado */
-}
-
-.creditos .neob {
-  color: #0015FF; /* NeoB em azul */
-}
-
-.creditos-icons {
-  margin-top: 10px; /* Espaçamento entre texto e ícones */
-}
-
-.creditos-icons .icon {
-  width: 60px; /* Tamanho dos ícones */
-  height: 60px;
-  margin: 0 10px; /* Espaçamento entre os ícones */
-  transition: transform 0.3s ease; /* Animação suave */
-  border-radius:50%;
-}
-
-.creditos-icons .icon:hover {
-  transform: scale(1.2); /* Aumenta o tamanho no hover
-  */
-  box-shadow:0 0 30px #00FF97C2;
-}
-a {
-  transform: scale(1.2); /* Aumenta o tamanho no hover */
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* FONT-FACE */
-@font-face {
-  font-family: 'AB';
-  src: url('/Aquire-BW0ox.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'VAS';
-  src: url('/VeniteAdoremusStraight-Yzo6v.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'VA';
-  src: url('/VeniteAdoremus-rgRBA.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Redux';
-  src: url('/TheRedux-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Gabriel Sans-Trial';
-  src: url('/GabrielSansTrialNmItc.woff') format('woff');
+.dark-mode button:hover {
+  background-color: #3367d6;
 }
